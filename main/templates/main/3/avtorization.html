@@ -1,0 +1,33 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="ru-en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial0-scale=0,10">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+    <title>Autorization</title>
+    <link rel="stylesheet" href="{%static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'css/page3.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'css/images/logo.png'%}">
+</head>
+
+<body>
+    <img class="logo" src="images/logo.png" alt="">
+    <form>
+        <h1 class="autoruz">Авторизация</h1>
+        <div>   
+        <input class="user" type="text" placeholder="Пользователь" name="Full-name" id="Full-name" required> <img class="icon" src="images/image 4.png"> 
+        </div>
+        <input type="text" placeholder="Пароль" name="email" id="email" required> <img class="icon_eye" src="images/image 2.png">
+        <div>
+        <p>Еще не зарегистрированы?</p> <a href="#">Регистрация</a>
+        </div>
+        <div>
+        <p>Забыли пароль?</p><a href="#">Восстановить</a></div>
+
+        <button type="recover" class="recoverybtn">Войти</button>
+    </form>
+</body>
+
+</html>
